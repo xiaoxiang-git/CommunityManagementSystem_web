@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>注册-社团管理系统</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/CommunityManagementSystem_web/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/CommunityManagementSystem_web/css/login.css" rel="stylesheet">
+    <link href="/CommunityManagementSystem_web/css/register.css" rel="stylesheet">
+</head>
+<body class="text-center">
+<form class="form-signin" action="http://127.0.0.1:8081/user/register" method="post">
+    <img class="mb-4" src="/CommunityManagementSystem_web/icons/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">请注册</h1>
+    <label for="inputUsername" class="sr-only">用户名</label>
+    <input type="text" id="inputUsername" name="name" class="form-control" placeholder="请输入用户名" required autofocus>
+    <label for="inputPassword" class="sr-only">密码</label>
+    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="请输入密码" required>
+    <label for="inputConfirmPassword" class="sr-only">确认密码</label>
+    <input type="password" id="inputConfirmPassword" class="form-control" placeholder="请重复输入密码" required>
+    <label for="inputUsername" class="sr-only">学号</label>
+    <input type="text" id="inputIdentityId" name="identityId" class="form-control" placeholder="请输入学号" required>
+    <select class="form-control" name="sex">
+        <option value="请选择">---请选择性别---</option>
+        <option value="男">男</option>
+        <option value="女">女</option>
+    </select>
+    <label for="inputPhone" class="sr-only">手机</label>
+    <input type="text" id="inputPhone" name="phone" class="form-control" placeholder="请输入手机号码" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">注册</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+</form>
+</body>
+</html>
